@@ -1,0 +1,31 @@
+ .moja-forma {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* dve kolone */
+  gap: 20px 40px; /* razmak redova i kolona */
+  align-items: center;
+  max-width: 800px;
+  margin: auto;
+  font-family: sans-serif;
+}
+
+.moja-forma label,
+.moja-forma div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.moja-forma button {
+  grid-column: span 2;  /* dugme zauzima obe kolone */
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.moja-forma button:hover {
+  background: royalblue;
+}
